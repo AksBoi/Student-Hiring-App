@@ -38,7 +38,7 @@ const RegisterPage = () => {
 			password: password,
 			userType: userType,
 		};
-		const response = await fetch("https://student-hiring-app-five.vercel.app:4000/auth/user/register", {
+		const response = await fetch("https://student-hiring-app-3.onrender.com:4000/auth/user/register", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify(body),
