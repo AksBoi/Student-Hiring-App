@@ -32,7 +32,7 @@ const LoginPage = () => {
 			email: email,
 			password: password,
 		};
-		const response = await fetch("http://localhost:4000/auth/login", {
+		const response = await fetch("https://student-hiring-app-five.vercel.app:4000/auth/login", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify(data),
