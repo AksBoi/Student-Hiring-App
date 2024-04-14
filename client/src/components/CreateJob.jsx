@@ -36,7 +36,7 @@ const CreateJob = ({ open, alljob, setOpen, setAllJob }) => {
 			companyId: user._id,
 		};
 
-		const response = await fetch("https://student-hiring-app-3.onrender.com:4000/company/createjob", {
+		const response = await fetch("https://student-hiring-app-3.onrender.com/company/createjob", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify(body),

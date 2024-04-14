@@ -20,7 +20,7 @@ const BookmarkPage = () => {
 	useEffect(() => {
 		const alljobs = async () => {
 			const response = await fetch(
-				`https://student-hiring-app-3.onrender.com:4000/user/get_saved_job/${user._id}`,
+				`https://student-hiring-app-3.onrender.com/user/get_saved_job/${user._id}`,
 				{
 					method: "GET",
 					headers: { "Content-Type": "application/json" },
@@ -36,7 +36,7 @@ const BookmarkPage = () => {
 		};
 
 		const userInfoMethod = async () => {
-			const response = await fetch(`https://student-hiring-app-3.onrender.com:4000/user/${user._id}`, {
+			const response = await fetch(`https://student-hiring-app-3.onrender.com/user/${user._id}`, {
 				method: "GET",
 				headers: { "Content-Type": "application/json" },
 			});
@@ -56,7 +56,7 @@ const BookmarkPage = () => {
 			userId: user._id,
 			jobId: jobId,
 		};
-		const response = await fetch("https://student-hiring-app-3.onrender.com:4000/user/apply_for_job", {
+		const response = await fetch("https://student-hiring-app-3.onrender.com/user/apply_for_job", {
 			method: "PUT",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify(body),
@@ -74,7 +74,7 @@ const BookmarkPage = () => {
 			userId: user._id,
 			jobId: jobId,
 		};
-		const response = await fetch("https://student-hiring-app-3.onrender.com:4000/user/save_job", {
+		const response = await fetch("https://student-hiring-app-3.onrender.com/user/save_job", {
 			method: "PUT",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify(body),
