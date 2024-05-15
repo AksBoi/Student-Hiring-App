@@ -11,7 +11,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
-const URL = "mongodb+srv://akshatsurana787:PY5VlSMhzu3kuMx9@cluster1.zxjlfiw.mongodb.net/";
+const URL = "mongodb+srv://akshatsurana787:wPrLxB86jl9ErzVc@cluster0.nxok2m3.mongodb.net/";
 
 mongoose
 	.connect(URL, { useNewUrlParser: true })
